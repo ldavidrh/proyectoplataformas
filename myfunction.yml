@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://35.223.47.36:8080
+functions:
+  myfunction:
+    lang: python3-debian
+    handler: ./myfunction
+    image: ldavidrh/myfunction:latest
+
